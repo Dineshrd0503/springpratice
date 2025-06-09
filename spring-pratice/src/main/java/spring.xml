@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien" class="com.dinesh.teluskospring.Alien" ></bean>
+    
+    <bean id="student" class="com.dinesh.teluskospring.Student"></bean>
+    
+    <bean id="student1" class="com.dinesh.teluskospring.Student" scope="prototype"></bean>
+    
+    <bean id="emp" class="com.dinesh.teluskospring.Employee">
+    <property name="sal" value="30000"></property>
+    </bean>
+
+</beans>

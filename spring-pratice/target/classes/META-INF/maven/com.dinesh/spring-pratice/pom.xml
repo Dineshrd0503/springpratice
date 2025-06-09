@@ -41,7 +41,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.dinesh.pratice1.Demo1</mainClass>
+                            <mainClass>com.dinesh.in28minspring.Demo1</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
