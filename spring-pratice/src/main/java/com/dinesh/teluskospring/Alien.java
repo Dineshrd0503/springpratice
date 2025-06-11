@@ -7,6 +7,15 @@ public class Alien {
 	public Alien() {
 		System.out.println("Alien class constructor");
 	}
+	
+	
+
+	public Alien(int age) {
+		super();
+		this.age = age;
+	}
+
+
 
 	public void code() {
 		System.out.println("i am coding");
