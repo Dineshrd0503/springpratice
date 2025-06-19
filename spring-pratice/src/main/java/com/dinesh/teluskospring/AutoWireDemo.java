@@ -9,7 +9,7 @@ public class AutoWireDemo {
 		// TODO Auto-generated method stub
 		System.out.println("now demonstrating autwired nototaion");
 		System.out.println("using a computer interface and implementing laptop and deskotp class");
-		ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
+		ApplicationContext context=new ClassPathXmlApplicationContext("src/main/spring.xml");
 		System.out.println("creating a employee object and calling comuter interface");
 		Employee obj=(Employee) context.getBean("emp");
 		obj.usecom();
