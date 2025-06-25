@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #2E7D32; }
+        form { margin: 20px auto; }
+        input { margin: 10px; padding: 5px; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+<h1 th:text="${message}">Welcome to the Spring Boot MVC Demo! using Model Interface</h1>
+<br>
+<h2>Add Two Numbers using Model</h2>
+<div class="addition">
+<form action="/add" method="GET">
+    Enter 1st number: <input type="number" name="firstNumber" required><br>
+    Enter 2nd number: <input type="number" name="secondNumber" required><br>
+    <input type="submit" value="Add Numbers">
+</form>
+</div>
+<h3>Subtract Two Numbers using ModelAndView</h3>
+<div class="subtraction">
+<form action="/subtract" method="GET">
+    Enter 1st number: <input type="number" name="firstNumber" required><br>
+    Enter 2nd number: <input type="number" name="secondNumber" required><br>
+    <input type="submit" value="Subtract Numbers">
+</form>
+</div>
+<h4>multiply tow numbers using ModelMap</h4>
+<div class="multiplication">
+    <form action="/multiply" method="GET">
+        Enter 1st number: <input type="number" name="firstNumber" required><br>
+        Enter 2nd number: <input type="number" name="secondNumber" required><br>
+        <input type="submit" value="Multiply Numbers">
+    </form>
+</div>
+<h5>creating objects for alien class using @RequestParam</h5>
+<div class="alien">
+    <form action="/alien" method="GET">
+        Enter Alien Name: <input type="text" name="alienName" required><br>
+        Enter Alien Age: <input type="number" name="alienAge" required><br>
+        Enter Alien Technology: <input type="text" name="alienTechnology" required><br>
+        <input type="submit" value="Submit Alien">
+    </form>
+</div>
+<h6> using ModelAttribute to display objects of student class</h6>
+<div class="student" >
+    <form action="/student" method="GET">
+        Enter Student Name: <input type="text" name="name" required><br>
+        Enter Student rollno: <input type="text" name="rollno" required><br>
+        Enter Student branch: <input type="text" name="branch" required><br>
+        <input type="submit" value="Submit Student">
+    </form>
+</div>
+</body>
+</html>
